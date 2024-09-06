@@ -24,24 +24,8 @@ function App() {
 	}, []);
 
 	return (
-		<div className="container">
-			<Routes>
-				<Route
-					exact
-					path="/"
-					element={user ? <Home user={user} /> : <Navigate to="/login" />}
-				/>
-				<Route
-					exact
-					path="/login"
-					element={user ? <Navigate to="/" /> : <Login />}
-				/>
-				<Route
-					path="/signup"
-					element={user ? <Navigate to="/" /> : <Signup />}
-				/>
-			</Routes>
-		</div>
+				<Home/>
+
 	);
 }
 
