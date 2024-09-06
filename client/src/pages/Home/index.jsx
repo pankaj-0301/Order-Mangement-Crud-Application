@@ -26,12 +26,12 @@ function Home(userDetails) {
                 <h1 className="text-xl font-bold text-blue-600">
                     Welcome, {user ? user.name : "Guest"}!
                 </h1>
-                <button
+{/*                 <button
                     className="bg-red-500 hover:bg-red-600 text-white rounded-lg px-2 py-0"
                     onClick={logout}
                 >
                     Log Out
-                </button>
+                </button> */}
             </div>
             <Provider store={store} className="flex-grow">
                 <div className="container mx-auto p-4 flex-grow flex flex-col">
